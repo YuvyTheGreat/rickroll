@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
         counter.up('rickroll')
         .then(result => {
                 console.log(result); // ← Add this line temporarily to debug
-                document.getElementById('rickrollcount').innerHTML = `Rickrolls: ${result.value} <br> <a href="HelloHathi.com">hellohathi.com</a>`;
+                document.getElementById('rickrollcount').innerHTML = `Rickrolls: ${result.count} <br> <a href="HelloHathi.com">hellohathi.com</a>`;
           })
           .catch(error => {
                 console.error('Error tracking page view:', error);
-                document.getElementById('view-count').textContent = 'Rickrolls: error';
+                document.getElementById('rickrollcount').textContent = 'Rickrolls: error';
           });
 
   });

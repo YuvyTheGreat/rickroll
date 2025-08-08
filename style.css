@@ -9,7 +9,7 @@ body, html {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -25%);
+    transform: translate(-50%, -35%);
     width: 1px;
     height: 1px;
 }
@@ -27,7 +27,7 @@ body, html {
     height: 1px;
   }
   to {
-    width: 45vw;
+    width: 50vw;
     height: auto;
   }
 }

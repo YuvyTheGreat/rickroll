@@ -23,3 +23,16 @@ document.addEventListener('DOMContentLoaded', ()=> {
           });
 
   });
+
+document.getElementById('overlay').addEventListener('click', () => {
+  document.getElementById('overlay').style.display = 'none';
+  document.querySelector('.videodiv').style.animation = 'expandVideo 1.5s ease-out forwards';
+  document.getElementById('rickrollcount').style.display = "block"
+});
+
+document.querySelector('.videodiv').addEventListener('animationend', () => {
+    const audio = document.getElementById('rickroll');
+    audio.play().catch(err => {
+    console.error("Autoplay blocked again!");
+  });
+})

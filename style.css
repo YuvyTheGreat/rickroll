@@ -9,7 +9,7 @@ body, html {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -25%);
     width: 1px;
     height: 1px;
     animation: expandVideo 3s ease-out forwards;

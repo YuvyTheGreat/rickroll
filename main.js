@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         counter.up('rickroll')
         .then(result => {
                 console.log(result); // ← Add this line temporarily to debug
-                document.getElementById('rickrollcount').innerHTML = `Rickrolls: ${result.data.up_count} <br> <a href="HelloHathi.com">hellohathi.com</a>`;
+                document.getElementById('rickrollcount').innerHTML = `Rickrolls: ${result.data.up_count} <br> <a href="HelloHathi.com">https://hellohathi.com</a>`;
           })
           .catch(error => {
                 console.error('Error tracking page view:', error);

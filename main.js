@@ -9,15 +9,13 @@ document.addEventListener('DOMContentLoaded', ()=> {
             });
     });
 
-  document.addEventListener('DOMContentLoaded', function() {
-          const counter = new Counter({ workspace: 'rickroll-counting' });
-          
+  document.addEventListener('DOMContentLoaded', function() {          
           const counter = new Counter({ workspace: 'rickroll-counting' });
 
         counter.up('rickroll')
         .then(result => {
                 console.log(result); // ← Add this line temporarily to debug
-                document.getElementById('view-count').textContent = `Rickrolls: ${result.value}`;
+                document.getElementById('rickrollcount').innerHTML = `Rickrolls: ${result.value} <br> <a href="HelloHathi.com">hellohathi.com</a>`;
           })
           .catch(error => {
                 console.error('Error tracking page view:', error);

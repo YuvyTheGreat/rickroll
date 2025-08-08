@@ -12,7 +12,6 @@ body, html {
     transform: translate(-50%, -25%);
     width: 1px;
     height: 1px;
-    animation: expandVideo 3s ease-out forwards;
 }
 
 .videodiv img {
@@ -33,6 +32,34 @@ body, html {
   }
 }
 
+#title {
+  position:fixed;
+  top:10px;
+  left:10px;
+  font-size: 50pt;
+  font-weight: 900;
+  animation: 2s infinite alternate bluemix;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0px;
+  padding: 6px 12px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+@keyframes bluemix {
+  from {
+    color: white;
+  }
+  
+  50% {
+    color: grey;
+  }
+  
+  to {
+    color: lightskyblue;
+  }
+}
+
   #rickrollcount {
       position: fixed;
       top: 10px;
@@ -46,4 +73,32 @@ body, html {
       z-index: 1000;
       font-weight:bold;
       text-align: right;
+      display: none;
     }
+    
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#tapText {
+  animation: pulse 1.5s ease-in-out infinite;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 50px;
+  
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
